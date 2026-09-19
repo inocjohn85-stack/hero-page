@@ -1,0 +1,459 @@
+
+ 
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: "Lato", sans-serif;
+    color: #17233c;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+ 
+a {
+    text-decoration: none;
+}
+ 
+ 
+
+ 
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+ 
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+ 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+ 
+ 
+/* Left Side */
+ 
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.nav-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+ 
+.nav-text {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.nav-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #17233c;
+}
+ 
+.nav-subtitle {
+    font-size: 11px;
+    color: #777777;
+    font-style: italic;
+}
+ 
+ 
+/* Navigation Links */
+ 
+.nav-right {
+    margin-left: auto;
+}
+ 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+ 
+.nav-links a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #17233c;
+    transition: 0.3s;
+}
+ 
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b9975b;
+}
+ 
+ 
+/* Apply Button */
+ 
+.nav-btn {
+    padding: 12px 22px;
+ 
+    background-color: #17233c;
+    color: #ffffff;
+ 
+    border-radius: 6px;
+ 
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+ 
+    transition: 0.3s;
+}
+ 
+.nav-btn:hover {
+    background-color: #b9975b;
+}
+ 
+ 
+
+.hero {
+    min-height: calc(100vh - 80px);
+ 
+    display: flex;
+    align-items: center;
+ 
+    background-color: #f7f8fa;
+}
+ 
+.hero-inner {
+    width: 86%;
+    max-width: 1200px;
+ 
+    margin: auto;
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+ 
+    gap: 70px;
+}
+ 
+ 
+/* Hero Text */
+ 
+.hero-text {
+    max-width: 580px;
+}
+ 
+.hero-title {
+    display: flex;
+    flex-direction: column;
+ 
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(45px, 6vw, 78px);
+    line-height: 1.05;
+ 
+    margin-bottom: 25px;
+}
+ 
+.line-dark {
+    color: #17233c;
+}
+ 
+.line-accent {
+    color: #b9975b;
+}
+ 
+.hero-desc {
+    max-width: 540px;
+ 
+    font-size: 17px;
+    color: #5f6675;
+ 
+    margin-bottom: 32px;
+}
+ 
+ 
+/* Hero Button */
+ 
+.hero-btn {
+    display: inline-block;
+ 
+    padding: 14px 30px;
+ 
+    background-color: #17233c;
+    color: #ffffff;
+ 
+    border-radius: 6px;
+ 
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+ 
+    transition: 0.3s;
+}
+ 
+.hero-btn:hover {
+    background-color: #b9975b;
+}
+ 
+ 
+/* Hero Image */
+ 
+.hero-image {
+    width: 100%;
+}
+ 
+.hero-image img {
+    width: 100%;
+    height: 500px;
+ 
+    object-fit: cover;
+ 
+    border-radius: 12px;
+ 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+ 
+ 
+
+ 
+.department {
+    padding: 100px 7%;
+    background-color: #ffffff;
+}
+ 
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+ 
+.section-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #b9975b;
+ 
+    margin-bottom: 10px;
+}
+ 
+.section-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: #17233c;
+ 
+    margin-bottom: 15px;
+}
+ 
+.section-container > p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #666666;
+}
+ 
+ 
+/* Department Cards */
+ 
+.department-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
+    gap: 25px;
+ 
+    text-align: left;
+}
+ 
+.card {
+    padding: 30px;
+ 
+    background-color: #f7f8fa;
+ 
+    border-radius: 10px;
+ 
+    border-top: 4px solid #b9975b;
+ 
+    transition: 0.3s;
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+ 
+.card h3 {
+    font-family: "Poppins", sans-serif;
+    color: #17233c;
+ 
+    font-size: 20px;
+ 
+    margin-bottom: 12px;
+}
+ 
+.card p {
+    color: #666666;
+}
+ 
+ 
+
+.apply {
+    padding: 100px 7%;
+ 
+    background-color: #17233c;
+ 
+    color: #ffffff;
+}
+ 
+.apply-container {
+    max-width: 800px;
+ 
+    margin: auto;
+ 
+    text-align: center;
+}
+ 
+.apply-container h2 {
+    font-family: "Poppins", sans-serif;
+ 
+    font-size: 42px;
+ 
+    margin-bottom: 15px;
+}
+ 
+.apply-container p {
+    color: #d8dce5;
+ 
+    margin-bottom: 30px;
+}
+ 
+.apply-btn {
+    display: inline-block;
+ 
+    padding: 14px 30px;
+ 
+    background-color: #b9975b;
+    color: #ffffff;
+ 
+    border-radius: 6px;
+ 
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+ 
+    transition: 0.3s;
+}
+ 
+.apply-btn:hover {
+    background-color: #ffffff;
+    color: #17233c;
+}
+ 
+
+ 
+.contact {
+    padding: 100px 7%;
+ 
+    background-color: #f7f8fa;
+}
+ 
+ 
+
+ 
+.footer {
+    padding: 25px;
+ 
+    background-color: #111a2d;
+ 
+    text-align: center;
+ 
+    color: #bfc4ce;
+ 
+    font-size: 13px;
+}
+ 
+ 
+
+ 
+@media (max-width: 900px) {
+ 
+    .navbar {
+        padding: 15px 5%;
+    }
+ 
+    .nav-links {
+        gap: 15px;
+    }
+ 
+    .hero-inner {
+        grid-template-columns: 1fr;
+ 
+        padding: 80px 0;
+    }
+ 
+    .hero-text {
+        text-align: center;
+        margin: auto;
+    }
+ 
+    .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+    .hero-image {
+        max-width: 700px;
+        margin: auto;
+    }
+ 
+    .department-cards {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+ 
+@media (max-width: 650px) {
+ 
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    .nav-left {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    .nav-right {
+        margin-left: 0;
+    }
+ 
+    .nav-links {
+        gap: 15px;
+    }
+ 
+    .nav-btn {
+        display: none;
+    }
+ 
+    .hero-title {
+        font-size: 45px;
+    }
+ 
+    .hero-image img {
+        height: 350px;
+    }
+ 
+    .section-container h2,
+    .apply-container h2 {
+        font-size: 32px;
+    }
+}
+ 
